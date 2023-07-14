@@ -1,0 +1,138 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2 {
+  margin: 0;
+}
+
+/* Header Styles */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+#city-search-form {
+  margin-top: 20px;
+}
+
+#city-input {
+  padding: 5px;
+}
+
+/* Main Content Styles */
+main {
+  padding: 20px;
+}
+
+#current-weather, #forecast, #search-history {
+  margin-bottom: 30px;
+}
+
+/* Current Weather Styles */
+#current-weather {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+#current-date {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+#weather-icon {
+  margin-top: 20px;
+}
+
+#temperature {
+  font-size: 48px;
+  font-weight: bold;
+  margin-top: 20px;
+  color: #333;
+}
+
+#humidity, #wind-speed {
+  margin-top: 10px;
+}
+
+/* Forecast Styles */
+#forecast {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+#forecast h2 {
+  margin-bottom: 20px;
+}
+
+#forecast-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.forecast-day {
+  text-align: center;
+  flex: 1;
+  padding: 10px;
+  border-right: 1px solid #ccc;
+}
+
+.forecast-day:last-child {
+  border-right: none;
+}
+
+.forecast-day .date {
+  font-weight: bold;
+}
+
+.forecast-day .weather-icon {
+  margin-top: 10px;
+}
+
+.forecast-day .temperature {
+  margin-top: 10px;
+  color: #333;
+}
+
+.forecast-day .other-details {
+  margin-top: 10px;
+}
+
+/* Search History Styles */
+#search-history {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+#search-history h2 {
+  margin-bottom: 20px;
+}
+
+#history-list {
+  padding: 0;
+  list-style: none;
+}
+
+.history-item {
+  cursor: pointer;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.history-item:hover {
+  text-decoration: underline;
+  color: #555;
+}

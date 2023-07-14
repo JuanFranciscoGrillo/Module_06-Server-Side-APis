@@ -1,0 +1,166 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2 {
+    margin: 0;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+#city-search-form {
+    margin-top: 20px;
+}
+
+#city-input {
+    padding: 5px;
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px;
+}
+
+#current-weather,
+#forecast,
+#search-history {
+    margin-bottom: 30px;
+}
+
+/* Current Weather Styles */
+#current-weather {
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+#current-date {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #333;
+}
+
+#weather-icon {
+    margin-top: 20px;
+    filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.4)); /* Adds a drop shadow effect to the weather icon */
+}
+
+#temperature {
+    font-size: 48px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #333;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Adds a text shadow effect to the temperature */
+}
+
+#humidity,
+#wind-speed {
+    margin-top: 10px;
+}
+
+/* Forecast Styles */
+#forecast {
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+    #forecast h2 {
+        margin-bottom: 20px;
+        color: #333;
+        text-transform: uppercase; /* Converts the text to uppercase */
+        letter-spacing: 1px; /* Adds some letter spacing */
+    }
+
+#forecast-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.forecast-day {
+    text-align: center;
+    flex: 1;
+    padding: 10px;
+    border-right: 1px solid #ccc;
+    transition: background-color 0.3s ease; /* Adds a smooth transition effect to the background color */
+}
+
+    .forecast-day:last-child {
+        border-right: none;
+    }
+
+    .forecast-day .date {
+        font-weight: bold;
+        color: #555;
+    }
+
+    .forecast-day .weather-icon {
+        margin-top: 10px;
+        filter: brightness(0.8); /* Adjusts the brightness of the weather icon */
+        transition: filter 0.3s ease; /* Adds a smooth transition effect to the brightness */
+    }
+
+    .forecast-day .temperature {
+        margin-top: 10px;
+        color: #333;
+        font-weight: bold;
+    }
+
+    .forecast-day .other-details {
+        margin-top: 10px;
+        color: #777;
+    }
+
+    .forecast-day:hover {
+        background-color: #eaf6ff; /* Changes the background color on hover */
+    }
+
+        .forecast-day:hover .weather-icon {
+            filter: brightness(1); /* Adjusts the brightness of the weather icon on hover */
+        }
+
+/* Search History Styles */
+#search-history {
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+    #search-history h2 {
+        margin-bottom: 20px;
+        color: #333;
+        text-transform: uppercase; /* Converts the text to uppercase */
+        letter-spacing: 1px; /* Adds some letter spacing */
+    }
+
+#history-list {
+    padding: 0;
+    list-style: none;
+}
+
+.history-item {
+    cursor: pointer;
+    margin-bottom: 5px;
+    color: #333;
+    transition: color 0.3s ease; /* Adds a smooth transition effect to the color */
+}
+
+    .history-item:hover {
+        text-decoration: underline;
+        color: #555; /* Changes the color on hover */
+    }
