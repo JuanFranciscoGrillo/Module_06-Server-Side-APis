@@ -16,21 +16,20 @@ The Weather Dashboard is a web application that allows users to view the weather
 
 	a. To install and run the weather dashboard, follow these steps:
 
-		I. Click on GitHub repository link:				    https://github.com/JuanFranciscoGrillo/Module_06-Server-Side-APis.gitLinks
+		I. Click on GitHub repository link:			
+	    https://github.com/JuanFranciscoGrillo/Module_06-Server-Side-APis.gitLinks
 
 		II. Click on deployed website link:	
         https://juanfranciscogrillo.github.io/Module_06-Server-Side-APis/Links
 
 5. How to use the project:	
 	
-	a. Open the index.html file in a web browser.	
+	a. Enter a city name in the search input and click the search button or press Enter.
 	
-	b. In the search input field, enter the name of a city for which you want to view the weather forecast.
+	b. The current weather conditions for the entered city will be displayed, including the city name, date, weather icon, temperature, humidity, and wind speed.
 	
-	c. Click the "Search" button or press Enter to retrieve the weather information for the city.
+	c. The 5-day forecast for the city will be shown, displaying the date, weather icon, temperature, wind speed, and humidity.
 	
-	d.The dashboard will display the current weather conditions for the city, including the city name, date, weather icon, temperature, humidity, and wind speed.
+	d. The entered city will be added to the search history below the search input.
 	
-	e. It will also show a 5-day forecast, indicating the date, weather icon, temperature, wind speed, and humidity for each day.	
-	
-	f.To view weather information for a previously searched city, click on the city name in the search history section.
+	e. Click on a city in the search history to view its current and future weather conditions again.
