@@ -1,9 +1,8 @@
-<!-- HTML document declaration -->
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- The head section contains meta information and the title of the webpage -->
 <head>
+    <!-- Webpage title and metadata -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Dashboard</title>
@@ -12,12 +11,11 @@
     <link rel="stylesheet" href="assets/css/stylesheet.css">
 </head>
 
-<!-- The body section contains the visible content of the webpage -->
 <body>
-    <!-- The header section contains the title of the webpage and a form for city search -->
     <header>
+        <!-- Website title and city search form -->
         <h1>Weather Dashboard</h1>
-        <form id="search-form">
+        <form id="city-search-form">
             <!-- Input field for entering a city -->
             <input type="text" id="city-input" placeholder="Enter a city">
             <!-- Button to submit the form -->
@@ -26,38 +24,38 @@
     </header>
 
     <main>
-        <!-- The current weather section displays information about the weather for the selected city -->
         <section id="current-weather">
-            <!-- Placeholder for displaying the city name -->
+            <!-- Display of current weather for the selected city -->
             <h2 id="city-name"></h2>
-            <!-- Placeholder for displaying the current date -->
+            <!-- Display of the current date -->
             <div id="date"></div>
-            <!-- Placeholder for displaying the weather icon -->
+            <!-- Display of the weather icon -->
             <div id="weather-icon"></div>
-            <!-- Placeholder for displaying the temperature -->
+            <!-- Display of the temperature -->
             <div id="temperature"></div>
-            <!-- Placeholder for displaying the humidity -->
+            <!-- Display of the humidity -->
             <div id="humidity"></div>
-            <!-- Placeholder for displaying the wind speed -->
+            <!-- Display of the wind speed -->
             <div id="wind-speed"></div>
         </section>
 
-        <!-- The forecast section displays a 5-day weather forecast for the selected city -->
         <section id="forecast">
+            <!-- Display of a 5-day weather forecast for the selected city -->
             <h2>5-Day Forecast</h2>
-            <!-- Placeholder for displaying the forecast data -->
+            <!-- Container for displaying the forecast data -->
             <div id="forecast-container"></div>
         </section>
 
-        <!-- The search history section shows a list of previously searched cities -->
         <section id="search-history">
+            <!-- Display of previously searched cities -->
             <h2>Search History</h2>
-            <!-- Placeholder for displaying the search history list -->
-            <ul id="city-list"></ul>
+            <!-- List for displaying the search history -->
+            <ul id="history-list"></ul>
         </section>
     </main>
 
     <!-- External JavaScript file for handling dynamic functionality -->
     <script src="assets/js/script.js"></script>
 </body>
+
 </html>

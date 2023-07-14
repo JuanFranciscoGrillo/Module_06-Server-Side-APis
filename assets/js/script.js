@@ -3,8 +3,8 @@ const apiKey = 'f35b49c8476fafd10de20e1503685381';
 
 // DOM elements
 const cityInput = document.getElementById('city-input');
-const searchForm = document.getElementById('search-form');
-const cityList = document.getElementById('city-list');
+const searchForm = document.getElementById('city-search-form');
+const cityList = document.getElementById('history-list');
 const cityName = document.getElementById('city-name');
 const dateElement = document.getElementById('date');
 const temperatureElement = document.getElementById('temperature');
@@ -17,6 +17,7 @@ const forecastContainer = document.getElementById('forecast-container');
 searchForm.addEventListener('submit', function (event) {
     event.preventDefault();
     const city = cityInput.value.trim();
+    console.log('Submitted city:', city);
     if (city) {
         getWeather(city);
         cityInput.value = '';
@@ -27,6 +28,7 @@ searchForm.addEventListener('submit', function (event) {
 cityList.addEventListener('click', function (event) {
     if (event.target.tagName === 'LI') {
         const city = event.target.textContent;
+        console.log('Clicked city:', city);
         getWeather(city);
     }
 });
@@ -34,6 +36,7 @@ cityList.addEventListener('click', function (event) {
 // Fetch weather data from the API
 function getWeather(city) {
     const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
+    console.log('Weather API URL:', apiUrl);
 
     fetch(apiUrl)
         .then(response => {
@@ -44,6 +47,7 @@ function getWeather(city) {
         })
         .then(data => {
             // Display current weather
+            console.log('Current weather data:', data);
             cityName.textContent = `${data.name}, ${data.sys.country}`;
             dateElement.textContent = formatDate(data.dt);
             temperatureElement.textContent = `Temperature: ${formatTemperature(data.main.temp)}°C`;
@@ -54,6 +58,7 @@ function getWeather(city) {
             // Fetch 5-day forecast data
             const { coord } = data;
             const forecastApiUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${coord.lat}&lon=${coord.lon}&appid=${apiKey}`;
+            console.log('Forecast API URL:', forecastApiUrl);
             return fetch(forecastApiUrl);
         })
         .then(response => {
@@ -64,12 +69,13 @@ function getWeather(city) {
         })
         .then(data => {
             // Display forecast
+            console.log('Forecast data:', data);
             forecastContainer.innerHTML = '';
             const forecastList = data.list;
             for (let i = 0; i < forecastList.length; i += 8) {
                 const forecast = forecastList[i];
                 const forecastItem = document.createElement('div');
-                forecastItem.classList.add('forecast-item');
+                forecastItem.classList.add('forecast-day');
                 forecastItem.innerHTML = `
           <h3>${formatDate(forecast.dt)}</h3>
           <img src="${getWeatherIconUrl(forecast.weather[0].icon)}" alt="Weather Icon">

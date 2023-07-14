@@ -4,7 +4,7 @@ Weather Dashboard
 
 2. Project Description:
 
-The Weather Dashboard is a web application that allows users to view the weather outlook for multiple cities. By retrieving weather data from the OpenWeatherMap API, the dashboard provides current and future weather conditions for searched cities. This enables users to plan their trips accordingly based on the weather information provided.
+This is a weather dashboard web application that allows users to search for the current weather and a 5-day forecast for a specific city.
 
 3. Table of Contents:
 

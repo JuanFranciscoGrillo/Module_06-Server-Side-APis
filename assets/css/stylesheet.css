@@ -2,14 +2,15 @@
 
 /* Body styles */
 body {
-    font-family: Arial, sans-serif;
+    /* Set the font and remove margin/padding */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
 }
 
 /* Header Styles */
-/* Styles for the header section, including the background color, text color, and alignment. */
 header {
+    /* Styles for the header section */
     background-color: #333;
     color: #fff;
     padding: 20px;
@@ -17,32 +18,33 @@ header {
 }
 
 /* City Search Form */
-/* Styles for the city search form, including margin. */
 #city-search-form {
+    /* Styles for the city search form */
     margin-top: 20px;
 }
 
 #city-input {
+    /* Styles for the city input field */
     padding: 5px;
 }
 
 /* Main Content Styles */
-/* Styles for the main content section, including padding and margin-bottom. */
 main {
+    /* Styles for the main content section */
     padding: 20px;
 }
 
 /* Current Weather and Forecast Sections */
-/* Styles for the current weather, forecast, and search history sections, including margin-bottom. */
 #current-weather,
 #forecast,
 #search-history {
+    /* Styles for the current weather, forecast, and search history sections */
     margin-bottom: 30px;
 }
 
 /* Current Weather Styles */
-/* Styles for the current weather section, including background color, border radius, box shadow, and text alignment. */
 #current-weather {
+    /* Styles for the current weather section */
     background-color: #f7f7f7;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -51,6 +53,7 @@ main {
 }
 
 #current-date {
+    /* Styles for the current date */
     font-size: 18px;
     font-weight: bold;
     margin-top: 10px;
@@ -58,26 +61,29 @@ main {
 }
 
 #weather-icon {
+    /* Styles for the weather icon */
     margin-top: 20px;
-    filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.4)); /* Adds a drop shadow effect to the weather icon */
+    filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.4));
 }
 
 #temperature {
+    /* Styles for the temperature */
     font-size: 48px;
     font-weight: bold;
     margin-top: 20px;
     color: #333;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Adds a text shadow effect to the temperature */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 #humidity,
 #wind-speed {
+    /* Styles for the humidity and wind speed */
     margin-top: 10px;
 }
 
 /* Forecast Styles */
-/* Styles for the forecast section, including background color, border radius, box shadow, and padding. */
 #forecast {
+    /* Styles for the forecast section */
     background-color: #f7f7f7;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -85,62 +91,72 @@ main {
 }
 
     #forecast h2 {
+        /* Styles for the forecast section heading */
         margin-bottom: 20px;
         color: #333;
-        text-transform: uppercase; /* Converts the text to uppercase */
-        letter-spacing: 1px; /* Adds some letter spacing */
+        text-transform: uppercase;
+        letter-spacing: 1px;
     }
 
 #forecast-container {
+    /* Styles for the forecast container */
     display: flex;
     justify-content: space-between;
 }
 
 .forecast-day {
+    /* Styles for each forecast day */
     text-align: center;
     flex: 1;
     padding: 10px;
     border-right: 1px solid #ccc;
-    transition: background-color 0.3s ease; /* Adds a smooth transition effect to the background color */
+    transition: background-color 0.3s ease;
 }
 
     .forecast-day:last-child {
+        /* Styles for the last forecast day */
         border-right: none;
     }
 
     .forecast-day .date {
+        /* Styles for the date in each forecast day */
         font-weight: bold;
         color: #555;
     }
 
     .forecast-day .weather-icon {
+        /* Styles for the weather icon in each forecast day */
         margin-top: 10px;
-        filter: brightness(0.8); /* Adjusts the brightness of the weather icon */
-        transition: filter 0.3s ease; /* Adds a smooth transition effect to the brightness */
+        filter: brightness(0.8);
+        transition: filter 0.3s ease;
     }
 
     .forecast-day .temperature {
+        /* Styles for the temperature in each forecast day */
         margin-top: 10px;
         color: #333;
         font-weight: bold;
     }
 
     .forecast-day .other-details {
+        /* Styles for other details in each forecast day */
         margin-top: 10px;
         color: #777;
     }
 
     .forecast-day:hover {
-        background-color: #eaf6ff; /* Changes the background color on hover */
+        /* Styles for the forecast day on hover */
+        background-color: #eaf6ff;
     }
 
         .forecast-day:hover .weather-icon {
-            filter: brightness(1); /* Adjusts the brightness of the weather icon on hover */
+            /* Styles for the weather icon on hover */
+            filter: brightness(1);
         }
 
 /* Search History Styles */
-/* Styles for the search history section, including background color, border radius, box shadow, and padding. */
 #search-history {
+    /* Styles for the search history section */
     background-color: #f7f7f7;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -148,25 +164,29 @@ main {
 }
 
     #search-history h2 {
+        /* Styles for the search history section heading */
         margin-bottom: 20px;
         color: #333;
-        text-transform: uppercase; /* Converts the text to uppercase */
-        letter-spacing: 1px; /* Adds some letter spacing */
+        text-transform: uppercase;
+        letter-spacing: 1px;
     }
 
 #history-list {
+    /* Styles for the history list */
     padding: 0;
     list-style: none;
 }
 
 .history-item {
+    /* Styles for each history item */
     cursor: pointer;
     margin-bottom: 5px;
     color: #333;
-    transition: color 0.3s ease; /* Adds a smooth transition effect to the color */
+    transition: color 0.3s ease;
 }
 
     .history-item:hover {
+        /* Styles for the history item on hover */
         text-decoration: underline;
-        color: #555; /* Changes the color on hover */
+        color: #555;
     }
